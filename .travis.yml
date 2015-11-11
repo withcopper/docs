@@ -1,0 +1,11 @@
+language: objective-c
+sudo: false
+script:
+- ./build/build.sh
+env:
+  global:
+  - GITHUB_DOCS_URL="https://github.com/withcopper/docs/"
+  - SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+notifications:
+  slack:
+    secure: S5KkiKx7PmlQRoXdm6MBrDPaNlzOBlPW2TtCm1/YS1qMbuQwI/jFS8BupqC85U91dAxrL4OY6WF4kbBn26qo5Vc0HJTFRLBjmhFONToGeXLcZ6s9GITfLsmMBLl6xyamIxVV8pGGw6dG2qvnd4lxfpL/9yHIYJsCr8hCL55ZETEJfZHOQJ2AYG2i9cjwi0H5gWhTZ+iH4mWNFPGhK51FkF5fg+IhFaTUUcRRpEiVtiHScikTVvmTTMnstwwPbYdaFnJtNHJTZeViCiJGOGmZfc2659gjRrdnTmA3WF9D8EOH5anehil4+P2Xs9xrJR8K1wL/kBs0/+Cxr3znMy9ZatWaPJgQmxmuKtW+Yq3g2ZczaMZTxKkvRcCbkNUo+BhUx7Th6y0+b0d2OPVG6+57DmH4FpbmhgPbV+GR/mjrMvBjuDjKh8SrSslTroNjbUloUAAwANYoBba7WvjJuEc7fmM5hSZDqW88f6gLpD38pgm1r/Ha/aoNvVjZFHcMht3BH8PhbH7PTwfn3sTxBbw/psnh8VIiXPBAOPzFrZrxr5ev8Uho56JUlCqt6/Kq+CxhJPkzxWj8+koGIFrLZOorHuct4eeSTeM2XxDNCH2Zood2SEn6Dgxi23RhhzOkk6CWx6cxcP7Oc4yaNOg8AlVGKLHbuNCXQfgWFIEkoqc9jYQ=
