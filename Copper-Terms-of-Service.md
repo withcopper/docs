@@ -178,7 +178,7 @@ By using the Service, you consent to receiving certain electronic communications
 
 ### 20. Contact Information
 
-The Service is offered by Copper Technologies, Inc., located at 1233 Howard Street, Apt. 2A, San Francisco, CA, 94103. You may contact us by sending correspondence to that address or by emailing us at [humas@withcopper.com](mailto:humans@withcopper.com). 
+The Service is offered by Copper Technologies, Inc., located at 1233 Howard Street, Apt. 2A, San Francisco, CA, 94103. You may contact us by sending correspondence to that address or by emailing us at [humans@withcopper.com](mailto:humans@withcopper.com). 
 
 ### 21. Notice Regarding Apple.
 
