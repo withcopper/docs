@@ -5,7 +5,7 @@
 Our mission is to empower people with their personal information and make it universally useful to them.
 Copper is a tool that organizes your personal information on your phone or personal device so that you can use services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. Our mission at Copper is to empower people by giving them control over their most important information. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
 
-Please take some time to read this Privacy Policy. It applies to your interactions with the Copper application and our website at https://withcopper.com (“Copper” or our “Services”). It explains what information we collect, how we use it, when we share it, how we protect it, and the choices you have. This policy is part of our [Terms of Service](http://github.com/withcopper/docs/Copper-Terms-of-Service.md), and by using our Services you agree to both. If you have any questions, drop us a line at [humans@withcopper.com](mailto:humans@withcopper.com).
+Please take some time to read this Privacy Policy. It applies to your interactions with the Copper application and our website at https://withcopper.com (“**Copper**” or our “**Services**”). It explains what information we collect, how we use it, when we share it, how we protect it, and the choices you have. This policy is part of our [Terms of Service](https://github.com/withcopper/docs/blob/master/Copper-Terms-of-Service.md), and by using our Services you agree to both. If you have any questions, drop us a line at [humans@withcopper.com](mailto:humans@withcopper.com).
 
 ## Information We Collect
 
@@ -13,7 +13,7 @@ Please take some time to read this Privacy Policy. It applies to your interactio
 
 #### We collect information that you provide us or give us permission to access, including the following information:
 
-**Information You Provide or Allow Us to Access**: In order to use Copper, you may choose to provide us with information such as name, address, phone number, email address, and date of birth. You may also give us permission to access information stored on your device, such as location, address book information, photos, and videos. Over time we intend to add more types of information based on feedback from users like you and the developers that use Copper. When you use Copper to create an account with the services that work with Copper (our “Applications”), we will ask your permission to share select pieces of your information with them so that you can create a new account or sign in to an existing account with each service.
+**Information You Provide or Allow Us to Access**: In order to use Copper, you may choose to provide us with information such as name, address, phone number, email address, and date of birth. You may also give us permission to access information stored on your device, such as location, address book information, photos, and videos. Over time we intend to add more types of information based on feedback from users like you and the developers that use Copper. When you use Copper to create an account with the services that work with Copper (our “**Application Providers**”), we will ask your permission to share select pieces of your information with them so that you can create a new account or sign in to an existing account with each service.
 
 **Communications**: If you contact us directly, such as when you request customer support or communicate with us via email, text message, or social media sites, we will receive your contact information and any additional information you provide.  
 
@@ -37,13 +37,13 @@ We use the information we collect to:
 
 ## Information Sharing and Disclosures
 
-> We only share your information with Applications when you tell us to. We do not sell your information.
+> We only share your information with Application Providers when you tell us to. We do not sell your information.
 
 #### We want to assure you that we do not sell your information to third parties.
 
 We will only share your information in the following ways: 
 
-**Applications**:  We will share your information with Applications only at your direction and with your consent. Applications use of your information is governed by their privacy policies and your settings on their services; be sure to review their privacy policies before you decide to share your information with them. 
+**Application Providers**:  We will share your information with Application Providers only at your direction and with your consent. Application Providers use of your information is governed by their privacy policies and your settings on their services; be sure to review their privacy policies before you decide to share your information with them. 
 
 **Third Parties**:  Our Services may optionally allow you to use third party services, such as Facebook and Twitter, to share with your friends that you are using Copper. Whatever you choose to share with those services is governed by their privacy policies, not ours. 
 
@@ -59,9 +59,9 @@ We will use reasonable efforts to object to any government requests for your dat
 
 ## The Choices You Have With Your Information
 
-> You can update, correct, or delete your information or modify what information is sent to Applications at any time by accessing your account settings. 
+> You can update, correct, or delete your information or modify what information is sent to Application Providers at any time by accessing your account settings. 
 
-You may visit your account settings in order to update, correct, or delete certain personal information. In your account settings, you can also update your permissions for the sharing of your personal information our Applications at any time, though keep in mind that they may have a copy of any data you previously shared. If you wish to close your account, you may email us or select the option in your account settings.  If you close your account, we will make efforts to delete your personal information, unless we have to keep it for legal reasons.  Please note, however, that we cannot guarantee that all instances of your information will be deleted from our Services; for example, some information may be held in inaccessible locations such as backup files, our Services may be inaccessible due to a network outage, or our code may have unexpected programming errors.
+You may visit your account settings in order to update, correct, or delete certain personal information. In your account settings, you can also update your permissions for the sharing of your personal information Application Providers at any time, though keep in mind that they may have a copy of any data you previously shared. If you wish to close your account, you may email us or select the option in your account settings.  If you close your account, we will make efforts to delete your personal information, unless we have to keep it for legal reasons.  Please note, however, that we cannot guarantee that all instances of your information will be deleted from our Services; for example, some information may be held in inaccessible locations such as backup files, our Services may be inaccessible due to a network outage, or our code may have unexpected programming errors.
 
 > We will give you communication preferences that we honor.
 
