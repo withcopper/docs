@@ -1,14 +1,14 @@
 # Integrate with Copper using OAuth
 
-We generally recommend people use one of our [SDKs at Copperworks](https://withcopper.com/apps) to build with Copper. I cases where an SDK doesn’t exist, or when flexibility is called for, we support API-based integrations through OAuth.
+We recommend you use one of our [SDKs at Copperworks](https://withcopper.com/apps) to build with Copper. If an SDK doesn’t yet exist for your preferred platform, or when flexibility is called for, we support API-based integrations through OAuth.
 
 Copper conforms to OAuth 2.0 with OpenID Connect 1.0, two of the world's most popular standards. This means you should be able to find a simple way to talk to Copper no matter which platform or language you are working in.
 
 ## Before Getting Started
 
-This document will take you through the basics of an OAuth integration with Copper. It assumes you already have a baseline knowledge of OAuth 2.0, and are looking for the meaty stuff like URLs, what's different, error cases and the like. If you don't yet understand this protocol, we recommend a bit of study before returning to start.
+This document will take you through the basics of an OAuth integration with Copper. It assumes you already have a baseline knowledge of OAuth 2.0, and are looking for the meaty stuff like URLs, what's different, error cases and the like. If you don't yet understand this protocol, we recommend [a bit of study](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) before returning to start.
 
-This document breaks the integration into its basic tasks:
+This document covers a full integration through the following steps:
 
 1. Register or Configure an App
 2. Authenticate a User
@@ -19,7 +19,7 @@ This document breaks the integration into its basic tasks:
 
 ## 1. Register or configure an App
 
-CopperWorks is our home for tools for Developers. Every Application talking to Copper must be registered at CopperWorks. An Application is anything that talks HTTP -- for example websites and iOS Apps are called "Applications" or "Apps" to us.
+CopperWorks is our home for tools for developers. Every Application talking to Copper must be registered at CopperWorks. An Application is anything that talks HTTP -- for example websites and iOS Apps are called "Applications" or "Apps" to us.
 
 You can register or configure an App at [CopperWorks](http://withcopper.com/app).
 
@@ -27,7 +27,7 @@ You can register or configure an App at [CopperWorks](http://withcopper.com/app)
 
 Every App has a `client_id` and `client_secret`. You will need these values soon. 
 
-These are your Application's keys -- so **keep them confidential and secure**. We recommend you come back to the site when you need them rather than storing them separately, unless you have a secure way to store them otherwise.
+The `client_secret` is your Application's key -- so **keep it confidential and secure**. We recommend you come back to Copperworks when you need it rather than storing it separately, unless you have a secure way to store it otherwise.
 
 ## 2. Authenticate a User
 
@@ -35,7 +35,7 @@ Authentication happens when we detect a user wants to login. This generally occu
 
 > We recommend our [Open with Copper Buttons](http://withcopper.com/apps/docs/open-with-copper) to start an authentication request for a consistent user experience.
 
-While Open with Copper Buttons are recommended, you can send users to log in page directly:
+While Open with Copper Buttons are recommended, you can send users to our login dialog directly:
 
 ```
 https://api.withcopper.com/oauth/dialog?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI
@@ -44,14 +44,14 @@ https://api.withcopper.com/oauth/dialog?client_id=CLIENT_ID&redirect_uri=REDIREC
 These parameters are **required**:
 
 * `client_id`: the Copper client ID of your Application
-* `redirect_uri`: pre-registered URI to redirect to after an attempted authorization. If this URI is not registered, authorization will always fail.
+* `redirect_uri`: URI to redirect to after an attempted authorization. You must register this URI with Copperworks in advance; authorization will fail otherwise.
 
 These parameters are _optional_:
 
 * `response_type`: which OpenID Connect flow to use; one of:
   * `code` authorization code OAuth flow, which can be exchanged for an access token and a refresh token server-side with a client secret
   * `token` short-lived access token only, permits API requests on behalf of the user for a short period of time but will quickly expire
-  * `id_token` returns an OpenID Connect ID token with basic profile data about the user, if requested. 
+  * `id_token` returns an OpenID Connect ID token with basic profile data about the user, if requested 
 
   > `id_token` can be combined with either of the other two `response_type` values above: 
   >
@@ -60,9 +60,9 @@ These parameters are _optional_:
   
 * `response_mode`: redirects with tokens as query string parameters if and only if set to `query`; otherwise tokens are placed after the URL hash, inaccessible to your server
 * `scope`: comma-separated list of requested permissions for user data. See [LINK TBD] for presently available scopes.
-* `nonce`: if set, only allows requests that haven’t used this nonce. Prevents replay attacks, is embedded within all access, refresh and ID tokens
+* `nonce`: if set, only allows requests that haven’t used this nonce. Prevents replay attacks, and is embedded within all access, refresh and ID tokens
 * `state`: passes through as a parameter to
-* `redirect_uri`: Protects against Cross-Site Request Forgery attacks; allows you to confirm that the request initiated in your app. Must be in your preregistered list of redirect_uris for the Appilication on CopperWorks.
+* `redirect_uri`: Protects against Cross-Site Request Forgery attacks; allows you to confirm that the request initiated in your app. Must be in your preregistered list of redirect_uris for the Application on CopperWorks.
 * `display`: form factor of window: popup or page 
 
 ## 3. Process the Response
@@ -154,7 +154,7 @@ You can decode this `id_token` when many JWT libraries and at [JWT.io](http://jw
   "picture": "http://example.com/janedoe/me.jpg"
 }
 ```
-> See OpenID Connect reference for deeper discussions of ID tokens.
+See [OpenID Connect reference](openid.net/specs/openid-connect-core-1_0.html) for deeper discussions of ID tokens.
 
 Note that `scope` would need to be set to request permissions for fields like email, picture, name in the example above.
 
@@ -165,7 +165,7 @@ To prevent CSRF attacks, confirm that the `nonce` inside the `id_token` is equiv
 With an `access_token` (`response_type=token`), you’ll have a short-lived token for exercising our API on behalf of the given user.
 
 ##### Validating Authorization Code Flow
-For the authorization code flow (`response_type=code`), you will send the returned code to your server, pair it with your Application's `CLIENT_SECRET`, and exchange it for a full token over a secured server-to-server channel.
+For the authorization code flow (`response_type=code`), send the authorization returned code to your server, pair it with your Application's `client_secret`, and exchange it for a full token over a secured server-to-server channel.
 
 To obtain an `access_token` and `refresh_token`, make an HTTP POST to the following OAuth 2.0 endpoint:
 
@@ -175,10 +175,10 @@ POST https://api.withcopper.com/oauth/token?client_id=CLIENT_ID&grant_type=autho
          
 These parameters are **required**:
 
-- `client_id`: Your application’s client id from CopperWorks
+- `client_id`: Your Application’s client id from CopperWorks
 grant_type: should be set to `authorization_code`
 - `redirect_uri`: The redirect_uri that you used to start the login flow
-- `client_secret`: Your Application cleint secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
+- `client_secret`: Your Application's client secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
 - `code`: The authorization code received from the dialog redirect
 
 On Success, you’ll receive a set of tokens in JSON as a response:
@@ -191,20 +191,18 @@ On Success, you’ll receive a set of tokens in JSON as a response:
 
 ## 5. Token Use and Storage
 
-You should store your `refresh_token` securely and use it to refresh the more volitile `access_token` as needed.
+You should store your `refresh_token` securely and use it to refresh the more volatile `access_token` as needed.
 
 **`access_token` versus `refresh_tokens`**
 
-All tokens are JWTs. But they have different privlidges.
+All tokens are JWTs. But they have different privileges.
 
 `access_tokens` are valid for a few hours and can be exposed directly to the web browser. All Copper API calls should be made (e.g., to /oauth/userinfo) using an `access_token`.
 
 `refresh_tokens` are valid for 30 days. They should never be exposed directly to a browser. They should be stored securely on your server and used to periodically generate new `access_tokens`. A `refresh_token` can be used to request a new `refresh_token` before it expires.
-  
-You will find `access_token` that never expire with other OAuth implementations around the web. We decided to rely on the `refresh_token` in OAuth for improved security to better protect people’s information. It does present more work to a developer than when access_tokens never expire. Our SDKs handle this gracefully and transparently for developers, which is one reason you may want to use one for your needs.
 
 #### Refreshing a Refresh Token
-To use a `refresh_token` to obtain an updated `refresh_token` (and now `access_token`), make an HTTP POST request to the following OAuth 2.0 endpoint:
+To use a `refresh_token` to obtain a new `access_token` and/or `refresh_token`, make an HTTP POST request to the following OAuth 2.0 endpoint:
 
 ```
 POST https://api.withcopper.com/oauth/token
@@ -242,7 +240,7 @@ The following parameters are **required**:
 * HTTP Authorization header with valid `access_token`
 
 ##### Response
-The `oauth\userinfo` endpoint is specified by OpenID Connect, and returns the user profile data you requested when authorizing your application:
+The `oauth\userinfo` endpoint is specified by OpenID Connect, and returns the user profile data you requested when authorizing your Application:
 
 ```
 {
