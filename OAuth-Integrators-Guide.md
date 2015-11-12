@@ -1,6 +1,6 @@
 # Integrate with Copper using OAuth
 
-We generally recommend people use one of our (SDKs at Copperworks)[https://withcopper.com/apps] to build with Copper. I cases where an SDK doesn’t exist, or when flexibility is called for, we support API-based integrations through OAuth.
+We generally recommend people use one of our [SDKs at Copperworks](https://withcopper.com/apps) to build with Copper. I cases where an SDK doesn’t exist, or when flexibility is called for, we support API-based integrations through OAuth.
 
 Copper conforms to OAuth 2.0 with OpenID Connect 1.0, two of the world's most popular standards. This means you should be able to find a simple way to talk to Copper no matter which platform or language you are working in.
 
@@ -13,15 +13,15 @@ This document breaks the integration into its basic tasks:
 1. Register or Configure an App
 2. Authenticate a User
 3. Process the Response
-4. Get the access_token
-5. Use the refresh_token
-6. Token storage
+4. Validate your Response
+5. Token Use and Storage
+6. Copper APIs
 
 ## 1. Register or configure an App
 
-CopperWorks is our home for tools for Developers. Every Application talking to Copper must be registered at CopperWorks. An Application is anything that talks HTTP -- for example websites and iOS Apps are called "Applications" to us.
+CopperWorks is our home for tools for Developers. Every Application talking to Copper must be registered at CopperWorks. An Application is anything that talks HTTP -- for example websites and iOS Apps are called "Applications" or "Apps" to us.
 
-You can register or configure an app at [CopperWorks](http://withcopper.com/app).
+You can register or configure an App at [CopperWorks](http://withcopper.com/app).
 
 > The redirect_uri must be under your control and will be used later in this integration
 
@@ -100,7 +100,7 @@ We redirect to the `REDIRECT_URI` with an error and associated error_message:
 http://your.service.io/copper/callback#error=user_denied&error_message=The+user+denied+your+request.
 ```
 
-### Validating Responses
+## 4. Validate your Response
 
 Since `REDIRECT_URI` is public, your server should proactively use the features of OAuth 2.0 to verify the messages should be trusted. 
 
@@ -109,6 +109,7 @@ Validating the response depends on the `response_type` you provided, and should 
 There are two types of responses you might need to validate: tokens and authorization codes
 
 #### ID Token Example
+
 If you’d asked for ID token (`response_mode=id_token`), a JWT representing the token will be appended to your redirect URI, along with the optional `state` parameter you provided.
 
 ID Tokens are an extension to OAuth 2.0 provided by OpenID Connect. 
@@ -172,7 +173,7 @@ To obtain an `access_token` and `refresh_token`, make an HTTP POST to the follow
 POST https://api.withcopper.com/oauth/token?client_id=CLIENT_ID&grant_type=authorization_code&redirect_uri=REDIRECT_URI&client_secret=CLIENT_SECRET&code=AUTHORIZATION_CODE
 ```
          
-The following parameters are **required**:
+These parameters are **required**:
 
 - `client_id`: Your application’s client id from CopperWorks
 grant_type: should be set to `authorization_code`
@@ -188,11 +189,11 @@ On Success, you’ll receive a set of tokens in JSON as a response:
 > Or an error:
 > {“error”: {“message”: ERROR_MESSAGE}}
 
-# 6. Token Use and Storage
+## 5. Token Use and Storage
 
-> You should store your `refresh_token` securely and use it to refresh the more volitile `access_token` as needed.
+You should store your `refresh_token` securely and use it to refresh the more volitile `access_token` as needed.
 
-#### `access_token` versus `refresh_tokens`
+**`access_token` versus `refresh_tokens`**
 
 All tokens are JWTs. But they have different privlidges.
 
@@ -218,7 +219,7 @@ These parameters are **required**:
 - `refresh_token`: The refresh token obtained from a previous call to `/oauth/token`
 
 
-# 7. Copper APIs
+# 6. Copper APIs
 
 ### [The Copper APIs](http://withcopper.com/apps)
 With an `access_token` you can make calls to the Copper API on behalf of an account owner.
