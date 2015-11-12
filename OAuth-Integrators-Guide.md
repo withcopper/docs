@@ -2,11 +2,11 @@
 
 We recommend you use one of our [SDKs at Copperworks](https://withcopper.com/apps) to build with Copper. If an SDK doesn’t yet exist for your preferred platform, or when flexibility is called for, we support API-based integrations through OAuth.
 
-Copper conforms to OAuth 2.0 with OpenID Connect 1.0, two of the world's most popular standards. This means you should be able to find a simple way to talk to Copper no matter which platform or language you are working in.
+Copper conforms to OAuth 2.0 with OpenID Connect 1.0, two of the world's most popular standards. This means you should be able to find a simple way to talk to Copper on the platform and language of your choice.
 
 ## Before Getting Started
 
-This document will take you through the basics of an OAuth integration with Copper. It assumes you already have a baseline knowledge of OAuth 2.0, and are looking for the meaty stuff like URLs, what's different, error cases and the like. If you don't yet understand this protocol, we recommend [a bit of study](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) before returning to start.
+This document will take you through the basics of an OAuth integration with Copper. It assumes you already have a baseline knowledge of OAuth 2.0, and are looking for the meaty stuff like URLs, what's different, error cases. If you don't yet understand this protocol, we recommend [a bit of study](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) before returning to this guide.
 
 This document covers a full integration through the following steps:
 
@@ -19,23 +19,23 @@ This document covers a full integration through the following steps:
 
 ## 1. Register or configure an App
 
-CopperWorks is our home for tools for developers. Every Application talking to Copper must be registered at CopperWorks. An Application is anything that talks HTTP -- for example websites and iOS Apps are called "Applications" or "Apps" to us.
+CopperWorks is our home for tools for developers. Every application talking to Copper must be registered at CopperWorks. An application is anything that talks HTTP -- for example websites and iOS Apps are called "applications" or "apps" to us.
 
-You can register or configure an App at [CopperWorks](http://withcopper.com/app).
+To begin, register or configure an app at [CopperWorks](http://withcopper.com/app).
 
 > The redirect_uri must be under your control and will be used later in this integration
 
-Every App has a `client_id` and `client_secret`. You will need these values soon. 
+Every app has a `client_id` and `client_secret`. You will need these values soon. 
 
-The `client_secret` is your Application's key -- so **keep it confidential and secure**. We recommend you come back to Copperworks when you need it rather than storing it separately, unless you have a secure way to store it otherwise.
+The `client_id` uniquely identifies your application to us. The `client_secret` is how you prove its you; it's your secret key -- **keep it confidential and secure**. We recommend you come back to Copperworks when you need your `client_secret` rather than storing it separately, unless you have a secure way to store it otherwise.
 
 ## 2. Authenticate a User
 
-Authentication happens when we detect a user wants to login. This generally occurs when a person taps an Open with Copper button to initiate a log in.
+Authentication happens when we detect a user wants to log in.
 
-> We recommend our [Open with Copper Buttons](http://withcopper.com/apps/docs/open-with-copper) to start an authentication request for a consistent user experience.
+> Time saving tip: our [Open with Copper Buttons](http://withcopper.com/apps/docs/open-with-copper) and SDKs handle all of the work below for you.
 
-While Open with Copper Buttons are recommended, you can send users to our login dialog directly:
+To initiate a User log in, redirect to our `ouaht/dialog` endpoint:
 
 ```
 https://api.withcopper.com/oauth/dialog?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI
@@ -43,7 +43,7 @@ https://api.withcopper.com/oauth/dialog?client_id=CLIENT_ID&redirect_uri=REDIREC
 
 These parameters are **required**:
 
-* `client_id`: the Copper client ID of your Application
+* `client_id`: the Copper client id of your application
 * `redirect_uri`: URI to redirect to after an attempted authorization. You must register this URI with Copperworks in advance; authorization will fail otherwise.
 
 These parameters are _optional_:
@@ -62,7 +62,7 @@ These parameters are _optional_:
 * `scope`: comma-separated list of requested permissions for user data. See [LINK TBD] for presently available scopes.
 * `nonce`: if set, only allows requests that haven’t used this nonce. Prevents replay attacks, and is embedded within all access, refresh and ID tokens
 * `state`: passes through as a parameter to
-* `redirect_uri`: Protects against Cross-Site Request Forgery attacks; allows you to confirm that the request initiated in your app. Must be in your preregistered list of redirect_uris for the Application on CopperWorks.
+* `redirect_uri`: Protects against Cross-Site Request Forgery attacks; allows you to confirm that the request initiated in your app. Must be in your preregistered list of redirect_uris for the application on CopperWorks.
 * `display`: form factor of window: popup or page 
 
 ## 3. Process the Response
@@ -165,7 +165,7 @@ To prevent CSRF attacks, confirm that the `nonce` inside the `id_token` is equiv
 With an `access_token` (`response_type=token`), you’ll have a short-lived token for exercising our API on behalf of the given user.
 
 ##### Validating Authorization Code Flow
-For the authorization code flow (`response_type=code`), send the authorization returned code to your server, pair it with your Application's `client_secret`, and exchange it for a full token over a secured server-to-server channel.
+For the authorization code flow (`response_type=code`), send the authorization returned code to your server, pair it with your application's `client_secret`, and exchange it for a full token over a secured server-to-server channel.
 
 To obtain an `access_token` and `refresh_token`, make an HTTP POST to the following OAuth 2.0 endpoint:
 
@@ -175,10 +175,10 @@ POST https://api.withcopper.com/oauth/token?client_id=CLIENT_ID&grant_type=autho
          
 These parameters are **required**:
 
-- `client_id`: Your Application’s client id from CopperWorks
+- `client_id`: Your application’s client id from CopperWorks
 grant_type: should be set to `authorization_code`
 - `redirect_uri`: The redirect_uri that you used to start the login flow
-- `client_secret`: Your Application's client secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
+- `client_secret`: Your application's client secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
 - `code`: The authorization code received from the dialog redirect
 
 On Success, you’ll receive a set of tokens in JSON as a response:
@@ -210,10 +210,10 @@ client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&client_secret=CLIENT_SECRET&refres
 ```
 These parameters are **required**:
 
-- `client_id`: Your Application’s client id from CopperWorks
+- `client_id`: Your application’s client id from CopperWorks
 - `grant_type`: `refresh_token`
 - `redirect_uri`: The `redirect_uri` that you used to start the login flow
-- `client_secret`: Your Application cleint secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
+- `client_secret`: Your application cleint secret from CopperWorks. Note: never expose this secret in client-side code, whether JavaScript or mobile binaries that could be decompiled
 - `refresh_token`: The refresh token obtained from a previous call to `/oauth/token`
 
 
