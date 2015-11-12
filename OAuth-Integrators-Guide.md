@@ -65,7 +65,7 @@ These parameters are _optional_:
 * `redirect_uri`: Protects against Cross-Site Request Forgery attacks; allows you to confirm that the request initiated in your app. Must be in your preregistered list of redirect_uris for the Appilication on CopperWorks.
 * `display`: form factor of window: popup or page 
 
-## 3. Process the Resposne
+## 3. Process the Response
 
 An Authentication Request can be approved or dismissed by both Users and Copper at different times.
 
