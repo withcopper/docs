@@ -1,6 +1,6 @@
 # Copper Privacy Policy
 
-> Last Modified November November 11, 2015
+> _Last Modified January 29, 2016_
 
 Our mission is to empower people with their personal information and make it universally useful to them.
 Copper is a tool that organizes your personal information on your phone or personal device so that you can use services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. Our mission at Copper is to empower people by giving them control over their most important information. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  

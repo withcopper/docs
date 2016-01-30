@@ -1,9 +1,9 @@
 
-## Copper Terms of Use
+## Copper Terms of Service
 
-> Last Modified: November 11, 2015
+> _Last Modified: January 29, 2016_
 
-Welcome, and thank you for your interest in Copper Technologies, Inc. (“**Copper**,” “**we**,” or “**us**”) and our website at www.withcopper.com, along with our related websites, networks, applications, and other services provided by us (collectively, our “**Service**”). These Terms of Use are a legally binding contract between you and Copper regarding your use of the Service. 
+Welcome, and thank you for your interest in Copper Technologies, Inc. (“**Copper**,” “**we**,” or “**us**”) and our website at www.withcopper.com, along with our related websites, networks, applications, and other services provided by us (collectively, our “**Service**”). These Terms of Service are a legally binding contract between you and Copper regarding your use of the Service. 
 PLEASE READ THE FOLLOWING TERMS CAREFULLY. BY CLICKING “I ACCEPT,” OR BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS AND CONDITIONS, INCLUDING THE COPPER PRIVACY POLICY (TOGETHER, THE “**TERMS**”). If you are not eligible, or do not agree to the Terms, then you do not have our permission to use the Service.
 These Terms provide that all disputes between you and Copper will be resolved by BINDING ARBITRATION. YOU AGREE TO GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend your rights under this contract,  except for matters that may be taken to small claims court. Your rights will be determined by a NEUTRAL ARBITRATOR and NOT a judge or jury, and your claims cannot be brought as a class action. Please review Section 18 (“Dispute Resolution and Arbitration”) for the details regarding your agreement to arbitrate any disputes with Copper.
 
