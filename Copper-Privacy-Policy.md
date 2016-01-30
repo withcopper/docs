@@ -1,4 +1,4 @@
-# Copper Privacy Policy
+## Copper Privacy Policy
 
 > _Last Modified January 29, 2016_
 
