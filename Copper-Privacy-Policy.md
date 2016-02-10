@@ -70,7 +70,7 @@ You may opt out of receiving promotional communications from us by using the uns
 
 > We only transfer information from your device to our services when it is required to provide you the Copper service.
 
-When you request that we share information from your device with an Application, we upload that information to our servers to facilitate the transfer.  If an Application requires regular updates of your information, we will automatically upload updated information from your device to our servers on a periodic basis.  
+When you request that we share information from your device with an Application, we upload that information to our servers to facilitate the transfer. We may also upload your information our Service for backup purposes, and to make it available for you when you use Copper on multiple devices. If an Application requires regular updates of your information, we will automatically upload updated information from your device to our servers on a periodic basis.  
 
 We take reasonable measures to protect your personal information in accordance with this Policy. Unfortunately, the Internet cannot be guaranteed to be 100% secure, and we cannot ensure or warrant the security of any information you transmit to us or store on the Services. 
 
