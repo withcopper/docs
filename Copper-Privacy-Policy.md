@@ -1,9 +1,8 @@
 ## Copper Privacy Policy
 
-> _Last Modified January 29, 2016_
+> _Last Modified Febuary 4, 2016_
 
-Our mission is to empower people with their personal information and make it universally useful to them.
-Copper is a tool that organizes your personal information on your phone or personal device so that you can use services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. Our mission at Copper is to empower people by giving them control over their most important information. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
+Our mission is to empower people with their personal information and make it universally useful to them. Copper is a tool that organizes your personal information so that you can use services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. Our mission at Copper is to empower people by giving them control over their most important information. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
 
 Please take some time to read this Privacy Policy. It applies to your interactions with the Copper application and our website at https://withcopper.com (“**Copper**” or our “**Services**”). It explains what information we collect, how we use it, when we share it, how we protect it, and the choices you have. This policy is part of our [Terms of Service](https://github.com/withcopper/docs/blob/master/Copper-Terms-of-Service.md), and by using our Services you agree to both. If you have any questions, drop us a line at [humans@withcopper.com](mailto:humans@withcopper.com).
 
@@ -69,7 +68,7 @@ You may opt out of receiving promotional communications from us by using the uns
 
 ## Data Storage and Security
 
-> We only transfer information from your device to our services when you ask us to share that information with an Application.
+> We only transfer information from your device to our services when it is required to provide you the Copper service.
 
 When you request that we share information from your device with an Application, we upload that information to our servers to facilitate the transfer.  If an Application requires regular updates of your information, we will automatically upload updated information from your device to our servers on a periodic basis.  
 
