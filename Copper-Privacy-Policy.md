@@ -1,26 +1,26 @@
 ## Copper Privacy Policy
 
-> _Last Modified Febuary 4, 2016_
+> _Last Modified Febrary 9, 2016_
 
-Our mission is to empower people with their personal information and make it universally useful to them. Copper is a tool that organizes your personal information so that you can use services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. Our mission at Copper is to empower people by giving them control over their most important information. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
+Our mission is to empower people with their personal information and make it universally useful to them. Copper is a tool that organizes your personal information in one account that you own so that you can use online services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
 
-Please take some time to read this Privacy Policy. It applies to your interactions with the Copper application and our website at https://withcopper.com (“**Copper**” or our “**Services**”). It explains what information we collect, how we use it, when we share it, how we protect it, and the choices you have. This policy is part of our [Terms of Service](https://github.com/withcopper/docs/blob/master/Copper-Terms-of-Service.md), and by using our Services you agree to both. If you have any questions, drop us a line at [humans@withcopper.com](mailto:humans@withcopper.com).
+Please take some time to read this Privacy Policy. It applies to your interactions with the Copper application and our website at https://withcopper.com (“**Copper**” or our “**Services**”). It explains what information we collect, how we use it, when we share it, how we protect it, and the choices you have. This policy is part of our [Terms of Service](https://github.com/withcopper/docs/blob/master/Copper-Terms-of-Service.md), and by using our Services you agree to both. We are available at [humans@withcopper.com](mailto:humans@withcopper.com) if you have any questions.
 
 ## Information We Collect
 
-> You may choose to provide us with personal information and give us access to information to create or manage accounts with the services you choose to use.
+> You may choose to provide us with personal information, and give us access to information, to use Copper.
 
 #### We collect information that you provide us or give us permission to access, including the following information:
 
-**Information You Provide or Allow Us to Access**: In order to use Copper, you may choose to provide us with information such as name, address, phone number, email address, and date of birth. You may also give us permission to access information stored on your device, such as location, address book information, photos, and videos. Over time we intend to add more types of information based on feedback from users like you and the developers that use Copper. When you use Copper to create an account with the services that work with Copper (our “**Application Providers**”), we will ask your permission to share select pieces of your information with them so that you can create a new account or sign in to an existing account with each service.
+**Information You Provide or Allow Us to Access**: In order to use Copper, you may choose to provide us with information such as name, address, phone number, email address, and date of birth. You may also give us permission to access information stored on your personal devices, such as location, address book information, photos, and videos. You may also give us permission to access information from other online services you use. Over time we intend to add more types of information based on feedback from users like you and the developers that use Copper. When you use Copper to create an account with the services that work with Copper (our “**Application Providers**”), we will ask your permission to share select pieces of your information with them so that you can create a new account or sign in to an existing account with each service.
 
 **Communications**: If you contact us directly, such as when you request customer support or communicate with us via email, text message, or social media sites, we will receive your contact information and any additional information you provide.  
 
 #### We collect information from your use of Copper, including the following information:
 
-**Device Information**: We receive certain information about your device when you interact with Copper, such as internet protocol (IP) or other device addresses or identifiers, push notification tokens, internet service provider, browser type, operating system information, date/time stamp, language preferences, your mobile carrier, and system configuration information. 
+**Device Information**: We may receive certain information about your device or browser when you interact with Copper, such as internet protocol (IP) or other device addresses or identifiers, push notification tokens, internet service provider, browser type, operating system information, date/time stamp, language preferences, your mobile carrier, and system configuration information. 
 
-**Usage Information**: To help us understand how you use Copper and help us improve it, we may receive information about your interactions with our Services, like the pages or other content you view, the dates and times of your visits, and which online services you register for or sign in to using Copper.
+**Usage Information**: To help us understand how you use Copper and to help us improve it, we may receive information about your interactions with our Services, like the pages or other content you view, the dates and times of your visits, and which online services you register for or sign in to using Copper.
 
 **Cookies and Similar Technologies**: We use cookies and similar technologies to remember you so you do not have to log in to our Services each time you access them and to provide and improve our Services and your experience. Cookies are small data files stored on your hard drive or in your device memory.
 
@@ -38,13 +38,13 @@ We use the information we collect to:
 
 > We only share your information with Application Providers when you tell us to. We do not sell your information.
 
-#### We want to assure you that we do not sell your information to third parties.
+#### We do not sell your information to third parties.
 
 We will only share your information in the following ways: 
 
 **Application Providers**:  We will share your information with Application Providers only at your direction and with your consent. Application Providers use of your information is governed by their privacy policies and your settings on their services; be sure to review their privacy policies before you decide to share your information with them. 
 
-**Third Parties**:  Our Services may optionally allow you to use third party services, such as Facebook and Twitter, to share with your friends that you are using Copper. Whatever you choose to share with those services is governed by their privacy policies, not ours. 
+**Third Parties**:  Our Services may optionally allow you to use third party services, such as Facebook and Twitter, to share with your friends that you are using Copper. Whatever you choose to share with such services is governed by their privacy policies, not ours. 
 
 **Infrustructure Providers**: We rely on products and services from various service provides for operational needs such as hosting, measurement, and improving our Services for you. We may share your information with the infrustructure providers who perform services on our behalf. Some of our infrustructure providers may use cookies, web beacons, or other technologies to keep track of your activity on our Services and other sites or apps, such as analytics providers who help us better understand how our users interact with our Services. 
 
@@ -60,11 +60,11 @@ We will use reasonable efforts to object to any government requests for your dat
 
 > You can update, correct, or delete your information or modify what information is sent to Application Providers at any time by accessing your account settings. 
 
-You may visit your account settings in order to update, correct, or delete certain personal information. In your account settings, you can also update your permissions for the sharing of your personal information Application Providers at any time, though keep in mind that they may have a copy of any data you previously shared. If you wish to close your account, you may email us or select the option in your account settings.  If you close your account, we will make efforts to delete your personal information, unless we have to keep it for legal reasons.  Please note, however, that we cannot guarantee that all instances of your information will be deleted from our Services; for example, some information may be held in inaccessible locations such as backup files, our Services may be inaccessible due to a network outage, or our code may have unexpected programming errors.
+You may visit your account settings in order to update, correct, or delete certain personal information. In your account settings, you can also update your permissions for the sharing of your personal information Application Providers at any time, though keep in mind that they may have a copy of any data you previously shared. If you wish to close your Copper account, you may email us or select the option in your account settings.  If you close your account, we will make efforts to delete your personal information, unless we have to keep it for legal reasons.  Please note, however, that we cannot guarantee that all instances of your information will be deleted from our Services; for example, some information may be held in inaccessible locations such as backup files, our Services may be inaccessible due to a network outage, or our code may have unexpected programming errors.
 
 > We will give you communication preferences that we honor.
 
-You may opt out of receiving promotional communications from us by using the unsubscribe link within each email. Even after you opt out from receiving promotional messages from us, you will continue to receive administrative and security messages from us regarding our Services. You can also turn on or off push notifications through your account settings or your operating system’s settings.
+You may opt out of receiving promotional communications from us by using the unsubscribe link within each email. Even after you opt out from receiving promotional messages from us, you will continue to receive important administrative and security messages from us regarding our Services. You can also turn on or off push notifications through your account settings or your operating system’s settings.
 
 ## Data Storage and Security
 
