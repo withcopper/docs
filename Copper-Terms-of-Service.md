@@ -1,7 +1,7 @@
 
 ## Copper Terms of Service
 
-> _Last Modified: February 9, 2016_
+> _Last Modified: June 7, 2016_
 
 Welcome, and thank you for your interest in Copper Technologies, Inc. (“**Copper**,” “**we**,” or “**us**”) and our website at www.withcopper.com, along with our related websites, networks, applications, and other services provided by us (collectively, our “**Service**”). These Terms of Service are a legally binding contract between you and Copper regarding your use of the Service. 
 PLEASE READ THE FOLLOWING TERMS CAREFULLY. BY CLICKING “I ACCEPT,” OR BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS AND CONDITIONS, INCLUDING THE COPPER PRIVACY POLICY (TOGETHER, THE “**TERMS**”). If you are not eligible, or do not agree to the Terms, then you do not have our permission to use the Service.
@@ -17,7 +17,7 @@ You must be at least 13 years of age to use the Service. By agreeing to these Te
 
 ### 3. Accounts and Registration
 
-To access most features of the Service, you must have a registered account on the Service. By downloading and opening the Copper application, or using a Copper browser extension, you agree to the creation of an account on your behalf. When you register for an account, you may be required to provide us with some information about yourself, such as your email address, phone number, or other contact information. You may also automatically provide use with user credentials, such as social media credentials, and unique identifiers on your phone. You agree that the information you provide to us is accurate and that you will keep it accurate and up-to-date at all times. When you register, you may be asked to provide a password or another form of authentication. You are solely responsible for maintaining the confidentiality of your account and any such credentials, and you accept responsibility for all activities that occur under your account. If you have reason to believe that your account is no longer secure, then you must immediately notify us at humans@withcopper.com.
+To access most features of the Service, you must have a registered account on the Service. By using the Copper service in a browser, downloading and opening the Copper application on your mobile device, or using a Copper browser extension, you agree to the creation of an account on your behalf. When you register for an account, you may be required to provide us with some information about yourself, such as your email address, phone number, or other contact information. You may also automatically provide use with user credentials, such as social media credentials, and unique identifiers on your phone. You agree that the information you provide to us is accurate and that you will keep it accurate and up-to-date at all times. When you register, you may be asked to provide a password or another form of authentication. You are solely responsible for maintaining the confidentiality of your account and any such credentials, and you accept responsibility for all activities that occur under your account. If you have reason to believe that your account is no longer secure, then you must immediately notify us at humans@withcopper.com.
 
 ### 4. Your User Information
 
