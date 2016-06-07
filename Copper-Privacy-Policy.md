@@ -1,6 +1,6 @@
 ## Copper Privacy Policy
 
-> _Last Modified Febrary 9, 2016_
+> _Last Modified June 7, 2016_
 
 Our mission is to empower people with their personal information and make it universally useful to them. Copper is a tool that organizes your personal information in one account that you own so that you can use online services without the need for a sign up form or password. We collect some information in order for you to have a Copper account and other information that is necessary to make the service work. We view the information you share with us as yours, but under our care, and are committed to respecting your privacy.  
 
@@ -46,13 +46,13 @@ We will only share your information in the following ways:
 
 **Third Parties**:  Our Services may optionally allow you to use third party services, such as Facebook and Twitter, to share with your friends that you are using Copper. Whatever you choose to share with such services is governed by their privacy policies, not ours. 
 
-**Infrustructure Providers**: We rely on products and services from various service provides for operational needs such as hosting, measurement, and improving our Services for you. We may share your information with the infrustructure providers who perform services on our behalf. Some of our infrustructure providers may use cookies, web beacons, or other technologies to keep track of your activity on our Services and other sites or apps, such as analytics providers who help us better understand how our users interact with our Services. 
+**Infrustructure Providers**:  We rely on products and services from various service provides for operational needs such as hosting, measurement, and improving our Services for you. We may share your information with the infrustructure providers who perform services on our behalf. Some of our infrustructure providers may use cookies, web beacons, or other technologies to keep track of your activity on our Services and other sites or apps, such as analytics providers who help us better understand how our users interact with our Services. 
 
-**Compliance with Laws and Law Enforcement Requests; Protection of Our Rights**: We may disclose your information (including your personal information) to a third party if (a) we believe that disclosure is reasonably necessary to comply with any applicable law, regulation, legal process or governmental request, (b) to enforce our agreements, policies, and Terms of Use, (c) to protect the security or integrity of our Services, (d) to protect the property, rights, and safety of us, our users, or the public from harm or illegal activities, (e) to respond to an emergency which we believe in good faith requires us to disclose information to assist in preventing the death or serious bodily injury of any person, or (f) to investigate and defend ourselves against any third-party claims or allegations.
+**Compliance with Laws and Law Enforcement Requests; Protection of Our Rights**: We may disclose your information (including your personal information) to a third party if (a) we believe that disclosure is reasonably necessary to comply with any applicable law, regulation, legal process or governmental request, (b) to enforce our agreements, policies, and Terms of Use, (c) to protect the security or integrity of our Services, (d) to protect the property, rights, and safety of us, our users, or the public from harm or illegal activities, (e) to respond to an emergency which we believe in good faith requires us to disclose information to assist in preventing the death or serious bodily injury of any person, or (f) to investigate and defend ourselves against any third-party claims or allegations.
 
 We will use reasonable efforts to object to any government requests for your data that we believe to be improper. In the event that we will disclose your information to a government entity, we will make a reasonable effort to provide you with notice of the disclosure, unless prohibited by law.
 
-**Business Transfers**: We may share or transfer your information (including your personal information) in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business or all or a portion of any affiliated companies to another company. We may notify you of changes in ownership or transfer of assets by posting a notice on our website. 
+**Business Transfers**: We may share or transfer your information (including your personal information) in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business or all or a portion of any affiliated companies to another company. We may notify you of changes in ownership or transfer of assets by posting a notice on our website. 
 
 **Your Consent**:  We will share your personal information with other companies, organizations, or individuals when we have your consent to do so. 
 
